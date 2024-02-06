@@ -317,7 +317,7 @@
             data: item
           });
           if (datasetOverride && datasetOverride.length >= i) {
-            angular.merge(dataset, datasetOverride[i]);
+            $.extend(true, dataset, datasetOverride[i]);
           }
           return dataset;
         })
